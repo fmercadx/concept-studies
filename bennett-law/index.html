@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bennett &amp; Bennett Law — Virginia Workers' Compensation &amp; Disability Attorneys | Design Concept</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,380;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF6EF;
+  --paper-2:#F1EADD;
+  --ink:#1C2B25;
+  --ink-soft:#4C5B53;
+  --accent:#9C4A21;
+  --accent-deep:#7C3916;
+  --gold:#B98A44;
+  --rule:#DCD2C0;
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Public Sans",-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  background:var(--paper);
+  color:var(--ink);
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--accent);color:var(--paper)}
+img{max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.eyebrow{
+  font-family:var(--sans);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12}
+.btn{
+  display:inline-block;
+  font-family:var(--sans);
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:17px 34px;
+  border-radius:2px;
+  transition:all .25s ease;
+  white-space:nowrap;
+}
+.btn-solid{background:var(--accent);color:var(--paper)}
+.btn-solid:hover{background:var(--accent-deep);transform:translateY(-2px);box-shadow:0 10px 24px rgba(156,74,33,.28)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+
+/* ---------- top bar ---------- */
+.topbar{
+  background:var(--ink);
+  color:rgba(250,246,239,.85);
+  font-size:13px;
+  letter-spacing:.04em;
+}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:9px;padding-bottom:9px}
+.topbar a{text-decoration:none;color:var(--paper);font-weight:600}
+.topbar a:hover{color:var(--gold)}
+
+/* ---------- nav ---------- */
+header.site{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,246,239,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;max-width:1180px;margin:0 auto}
+.wordmark{font-family:var(--serif);font-size:24px;font-weight:600;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+.wordmark em{font-style:italic;font-weight:400;color:var(--accent)}
+.navlinks{display:flex;gap:28px;align-items:center;list-style:none}
+.navlinks a{font-size:14px;font-weight:500;text-decoration:none;color:var(--ink-soft);letter-spacing:.02em;white-space:nowrap}
+.navlinks a:hover{color:var(--accent)}
+.nav .btn{padding:12px 22px;font-size:12px}
+@media(max-width:900px){.navlinks li:not(:last-child){display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule)}
+.hero .wrap{
+  display:grid;
+  grid-template-columns:minmax(0,7fr) minmax(0,5fr);
+  gap:64px;
+  padding-top:96px;padding-bottom:120px;
+  position:relative;z-index:2;
+}
+.hero h1{
+  font-size:clamp(42px,5.2vw,68px);
+  font-weight:380;
+  letter-spacing:-.01em;
+  margin:22px 0 26px;
+}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lede{font-size:19px;color:var(--ink-soft);max-width:52ch;margin-bottom:38px}
+.hero .cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.hero .call-note{font-size:14px;color:var(--ink-soft)}
+.hero .call-note strong{font-size:17px;color:var(--ink);display:block;letter-spacing:.02em}
+.ridge{
+  position:absolute;bottom:-2px;left:0;width:100%;z-index:1;
+  color:var(--paper-2);
+}
+/* credential card */
+.cred-card{
+  align-self:center;
+  background:var(--ink);
+  color:var(--paper);
+  padding:44px 40px 40px;
+  border-radius:3px;
+  position:relative;
+  box-shadow:0 30px 60px rgba(28,43,37,.25);
+}
+.cred-card::before{
+  content:"";position:absolute;inset:10px;
+  border:1px solid rgba(250,246,239,.18);
+  border-radius:2px;pointer-events:none;
+}
+.cred-card .eyebrow{color:var(--gold)}
+.cred-card h3{font-size:26px;font-weight:500;margin:14px 0 10px;font-style:italic}
+.cred-card p{font-size:15px;color:rgba(250,246,239,.78);line-height:1.6}
+.cred-card .sig{
+  margin-top:26px;padding-top:20px;
+  border-top:1px solid rgba(250,246,239,.15);
+  display:flex;justify-content:space-between;align-items:baseline;
+  font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);
+}
+.cred-card .sig span:last-child{font-family:var(--serif);font-style:italic;text-transform:none;letter-spacing:0;font-size:15px;color:var(--paper)}
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:64px;padding-bottom:80px}
+}
+
+/* ---------- trust strip ---------- */
+.trust{background:var(--paper-2);border-bottom:1px solid var(--rule)}
+.trust .wrap{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  padding-top:34px;padding-bottom:34px;gap:24px;
+}
+.trust .item{text-align:center}
+.trust .num{font-family:var(--serif);font-size:30px;font-weight:500;color:var(--ink)}
+.trust .num em{font-style:italic;color:var(--accent)}
+.trust .lbl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:2px}
+@media(max-width:900px){.trust .wrap{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- sections ---------- */
+section{padding:104px 0}
+.sec-head{max-width:640px;margin-bottom:64px}
+.sec-head h2{font-size:clamp(32px,3.6vw,46px);margin-top:18px;font-weight:420}
+.sec-head h2 em{font-style:italic;color:var(--accent)}
+.sec-head p{margin-top:18px;color:var(--ink-soft);font-size:18px}
+
+/* practice areas */
+.practice-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.p-card{
+  border:1px solid var(--rule);
+  border-radius:3px;
+  padding:52px 48px;
+  background:#fff;
+  position:relative;
+  transition:all .3s ease;
+}
+.p-card:hover{border-color:var(--accent);box-shadow:0 24px 48px rgba(28,43,37,.08);transform:translateY(-4px)}
+.p-card .no{
+  font-family:var(--serif);font-style:italic;
+  font-size:15px;color:var(--gold);letter-spacing:.05em;
+}
+.p-card h3{font-size:29px;margin:12px 0 14px;font-weight:500}
+.p-card>p{color:var(--ink-soft);font-size:16px;margin-bottom:26px}
+.p-card ul{list-style:none;margin-bottom:34px}
+.p-card li{
+  padding:11px 0 11px 26px;
+  border-bottom:1px solid var(--paper-2);
+  font-size:15.5px;position:relative;
+}
+.p-card li::before{
+  content:"§";position:absolute;left:0;
+  font-family:var(--serif);font-style:italic;color:var(--accent);
+}
+.p-card .link{
+  font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  text-decoration:none;color:var(--accent);
+}
+.p-card .link::after{content:" →";transition:margin .2s}
+.p-card .link:hover::after{margin-left:6px}
+@media(max-width:900px){.practice-grid{grid-template-columns:1fr}}
+
+/* ---------- inside advantage (dark editorial) ---------- */
+.difference{background:var(--ink);color:var(--paper)}
+.difference .eyebrow{color:var(--gold)}
+.diff-grid{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+.diff-grid h2{font-size:clamp(34px,3.8vw,50px);font-weight:400;margin-top:18px}
+.diff-grid h2 em{font-style:italic;color:var(--gold)}
+.diff-grid .intro{color:rgba(250,246,239,.75);margin-top:22px;font-size:17px}
+.diff-list{display:flex;flex-direction:column}
+.diff-item{
+  padding:34px 0;
+  border-bottom:1px solid rgba(250,246,239,.14);
+  display:grid;grid-template-columns:64px 1fr;gap:24px;
+}
+.diff-item:first-child{padding-top:6px}
+.diff-item .n{
+  font-family:var(--serif);font-style:italic;
+  font-size:34px;color:var(--gold);line-height:1;
+}
+.diff-item h3{font-size:21px;font-weight:500;margin-bottom:8px}
+.diff-item p{font-size:15.5px;color:rgba(250,246,239,.72)}
+@media(max-width:900px){.diff-grid{grid-template-columns:1fr;gap:44px}}
+
+/* ---------- story ---------- */
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.story blockquote{
+  font-family:var(--serif);
+  font-size:clamp(26px,2.8vw,36px);
+  font-style:italic;font-weight:400;line-height:1.3;
+  padding-left:34px;
+  border-left:3px solid var(--accent);
+}
+.story blockquote footer{
+  font-family:var(--sans);font-style:normal;
+  font-size:13px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-soft);margin-top:22px;
+}
+.story .body p{color:var(--ink-soft);margin-bottom:20px;font-size:16.5px}
+.story .body p:first-child{font-size:19px;color:var(--ink)}
+.story .body .btn{margin-top:10px}
+@media(max-width:900px){.story .wrap{grid-template-columns:1fr;gap:48px}}
+
+/* ---------- articles ---------- */
+.articles{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.articles .sec-head{display:flex;justify-content:space-between;align-items:flex-end;max-width:none}
+.articles .sec-head .link{
+  font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--accent);text-decoration:none;white-space:nowrap;margin-left:40px;
+}
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.art{
+  background:var(--paper);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  padding:36px 34px;
+  text-decoration:none;
+  transition:all .3s ease;
+  display:flex;flex-direction:column;
+}
+.art:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(28,43,37,.08);border-color:var(--accent)}
+.art .cat{font-size:11.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.art h3{font-size:21px;font-weight:500;line-height:1.3;margin-bottom:14px;flex:1}
+.art p{font-size:14.5px;color:var(--ink-soft)}
+.art .read{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-top:22px}
+@media(max-width:900px){.art-grid{grid-template-columns:1fr}}
+
+/* ---------- service area ---------- */
+.area .wrap{display:grid;grid-template-columns:5fr 7fr;gap:80px}
+.towns{
+  columns:3;column-gap:40px;
+  font-size:15px;color:var(--ink-soft);
+  list-style:none;
+}
+.towns li{padding:7px 0;border-bottom:1px solid var(--paper-2);break-inside:avoid}
+@media(max-width:900px){.area .wrap{grid-template-columns:1fr;gap:40px}.towns{columns:2}}
+
+/* ---------- consult CTA ---------- */
+.consult{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.consult .wrap{display:grid;grid-template-columns:6fr 5fr;gap:80px;position:relative;z-index:2}
+.consult h2{font-size:clamp(34px,4vw,52px);font-weight:400;margin-top:18px}
+.consult h2 em{font-style:italic;color:var(--gold)}
+.consult .eyebrow{color:var(--gold)}
+.consult p.sub{color:rgba(250,246,239,.75);margin-top:20px;font-size:17px;max-width:44ch}
+.consult .phone{margin-top:36px;font-size:15px;color:rgba(250,246,239,.6)}
+.consult .phone strong{display:block;font-family:var(--serif);font-size:30px;color:var(--paper);font-weight:500;letter-spacing:.01em}
+.form{
+  background:var(--paper);color:var(--ink);
+  border-radius:3px;padding:44px 40px;
+  box-shadow:0 30px 60px rgba(0,0,0,.3);
+}
+.form h3{font-size:22px;margin-bottom:6px}
+.form .note{font-size:13.5px;color:var(--ink-soft);margin-bottom:26px}
+.form label{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin:16px 0 6px}
+.form input,.form select,.form textarea{
+  width:100%;padding:13px 14px;
+  border:1px solid var(--rule);border-radius:2px;
+  background:#fff;font-family:var(--sans);font-size:15px;color:var(--ink);
+}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--accent);border-color:transparent}
+.form .btn{width:100%;margin-top:26px;text-align:center;border:none;cursor:pointer}
+.form .fine{font-size:12px;color:var(--ink-soft);margin-top:14px;text-align:center}
+@media(max-width:900px){.consult .wrap{grid-template-columns:1fr;gap:48px}}
+
+/* ---------- footer ---------- */
+footer.site{background:#14201B;color:rgba(250,246,239,.6);font-size:14px}
+footer.site .wrap{padding-top:64px;padding-bottom:40px}
+.f-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:44px;border-bottom:1px solid rgba(250,246,239,.1)}
+.f-grid .wordmark{color:var(--paper);font-size:21px}
+.f-grid p{margin-top:14px;line-height:1.7}
+.f-grid h4{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:600}
+.f-grid ul{list-style:none}
+.f-grid li{margin-bottom:10px}
+.f-grid a{text-decoration:none;color:rgba(250,246,239,.6)}
+.f-grid a:hover{color:var(--paper)}
+.legal{padding-top:28px;font-size:12.5px;line-height:1.7;color:rgba(250,246,239,.4)}
+.legal .badge{
+  display:inline-block;margin-bottom:14px;
+  padding:5px 12px;border:1px solid rgba(250,246,239,.25);border-radius:2px;
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(250,246,239,.55);
+}
+@media(max-width:900px){.f-grid{grid-template-columns:1fr 1fr}}
+
+/* ---------- reveal animation (progressive enhancement: content visible without JS) ---------- */
+html.anim .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+html.anim .rv.in{opacity:1;transform:none}
+html.anim .rv.d1{transition-delay:.08s}html.anim .rv.d2{transition-delay:.16s}html.anim .rv.d3{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){html.anim .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>12 Courthouse Square, New River Valley, VA &nbsp;·&nbsp; Serving Southwest &amp; Central Virginia</span>
+    <span>Free consultation: <a href="tel:5405550147">540-555-0147</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <nav class="nav">
+    <a class="wordmark" href="#">Bennett <em>&amp;</em> Bennett Law</a>
+    <ul class="navlinks">
+      <li><a href="#practice">Workers' Compensation</a></li>
+      <li><a href="#practice">Social Security Disability</a></li>
+      <li><a href="#difference">Why Us</a></li>
+      <li><a href="#story">Our Firm</a></li>
+      <li><a href="#articles">Resources</a></li>
+      <li><a class="btn btn-solid" href="#consult">Free Consultation</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">New River Valley, Virginia · A Father &amp; Son Practice</span>
+      <h1 class="rv d1">Your attorney should know the insurer's playbook. <em>Ours spent twelve years inside it.</em></h1>
+      <p class="lede rv d2">Before practicing law, J.&nbsp;R.&nbsp;Bennett evaluated injury claims as a workers' compensation insurance adjuster. He knows exactly how the other side builds a denial — because he used to build them.</p>
+      <div class="cta-row rv d3">
+        <a class="btn btn-solid" href="#consult">Schedule a Free Consultation</a>
+        <div class="call-note">Or call us directly<strong>540-555-0147</strong></div>
+      </div>
+    </div>
+    <aside class="cred-card rv d2">
+      <span class="eyebrow">The Inside Advantage</span>
+      <h3>Attorney at Law.<br>Former Claims Adjuster.</h3>
+      <p>Most lawyers guess how the insurance company will value your claim. Ours used to write those valuations. That inside fluency changes how your case is built, argued, and settled.</p>
+      <div class="sig"><span>J. R. Bennett</span><span>Esq.</span></div>
+    </aside>
+  </div>
+  <svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0,80 L120,62 240,74 380,44 520,70 660,36 820,66 980,48 1120,72 1280,54 1440,68 L1440,110 0,110 Z"/></svg>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="item rv"><div class="num">30<em>+</em></div><div class="lbl">Years of Bennett Family Practice</div></div>
+    <div class="item rv d1"><div class="num"><em>2</em></div><div class="lbl">Generations, One Firm</div></div>
+    <div class="item rv d2"><div class="num">24<em>+</em></div><div class="lbl">Virginia Communities Served</div></div>
+    <div class="item rv d3"><div class="num"><em>$0</em></div><div class="lbl">To Speak With an Attorney</div></div>
+  </div>
+</div>
+
+<section id="practice">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">What We Do</span>
+      <h2>Two practices. <em>One promise:</em> you are not a case number.</h2>
+      <p>We concentrate on the two systems most likely to fail an injured Virginian — workers' compensation and Social Security disability — so we can know them completely.</p>
+    </div>
+    <div class="practice-grid">
+      <article class="p-card rv">
+        <span class="no">No. 1</span>
+        <h3>Virginia Workers' Compensation</h3>
+        <p>When you're hurt on the job, the insurer's doctors and adjusters start building their file immediately. We build yours better.</p>
+        <ul>
+          <li>Orthopedic &amp; traumatic injuries</li>
+          <li>Occupational exposures &amp; illness</li>
+          <li>Wage loss &amp; permanent disability benefits</li>
+          <li>Lifetime medical benefits</li>
+          <li>Survivors' &amp; death benefits</li>
+        </ul>
+        <a class="link" href="#consult">Discuss your work injury</a>
+      </article>
+      <article class="p-card rv d1">
+        <span class="no">No. 2</span>
+        <h3>Social Security Disability</h3>
+        <p>Most SSDI claims are denied the first time — not because they lack merit, but because the paperwork is a language of its own. We're fluent.</p>
+        <ul>
+          <li>SSDI denial representation &amp; appeals</li>
+          <li>Disability insurance benefits</li>
+          <li>Supplemental Security Income (SSI)</li>
+          <li>Hearings before administrative law judges</li>
+          <li>Back-pay &amp; benefit calculations</li>
+        </ul>
+        <a class="link" href="#consult">Fight your denial</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="difference" id="difference">
+  <div class="wrap diff-grid">
+    <div>
+      <span class="eyebrow rv">The Inside Advantage</span>
+      <h2 class="rv d1">What changes when your lawyer <em>came from the other side</em></h2>
+      <p class="intro rv d2">Workers' compensation cases are won and lost on how insurers value, delay, and deny claims. J.&nbsp;R.&nbsp;Bennett spent twelve years making those decisions from the inside. That isn't a footnote. It's the strategy.</p>
+    </div>
+    <div class="diff-list">
+      <div class="diff-item rv">
+        <span class="n">i.</span>
+        <div>
+          <h3>He knows how your claim gets valued</h3>
+          <p>Insurers put a number on your case early — quietly, and rarely in your favor. He knows how that number is built, and how to prove it wrong.</p>
+        </div>
+      </div>
+      <div class="diff-item rv d1">
+        <span class="n">ii.</span>
+        <div>
+          <h3>Denials follow patterns he's seen from inside</h3>
+          <p>Delay tactics, paper reviews, "pre-existing condition" arguments — he's watched every one of them get drafted. None of them surprise us.</p>
+        </div>
+      </div>
+      <div class="diff-item rv d2">
+        <span class="n">iii.</span>
+        <div>
+          <h3>Independent medical exams get real scrutiny</h3>
+          <p>When the insurer's doctor minimizes your injury, we challenge the exam the way an adjuster fears most — on the record it was built from.</p>
+        </div>
+      </div>
+      <div class="diff-item rv d3">
+        <span class="n">iv.</span>
+        <div>
+          <h3>Settlements get negotiated at true value</h3>
+          <p>First offers are calculated to close files cheaply. We negotiate from what the insurer's own math says the claim is worth — not what they hope you'll take.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <blockquote class="rv">
+      At a high-volume firm, you are a file. Here, you are the reason the firm exists.
+      <footer>— The founding principle of Bennett &amp; Bennett</footer>
+    </blockquote>
+    <div class="body">
+      <p class="rv">For over three decades, the Bennett family has served the people of Southwest and Central Virginia.</p>
+      <p class="rv d1">When father and son partnered, they built a different kind of firm — one that deliberately walked away from the impersonal machinery of high-volume practices and returned legal counsel to where it belongs: on the client.</p>
+      <p class="rv d2">That means you talk to your attorney, not a case manager. It also means quality representation at rates working families can afford, with low down payments and payment plans available.</p>
+      <a class="btn btn-ghost rv d3" href="#consult">Meet the Attorneys</a>
+    </div>
+  </div>
+</section>
+
+<section class="articles" id="articles">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">Know Your Rights</span>
+        <h2>Plain answers to hard questions</h2>
+      </div>
+      <a class="link" href="#">All articles →</a>
+    </div>
+    <div class="art-grid">
+      <a class="art rv" href="#">
+        <span class="cat">Workers' Compensation</span>
+        <h3>What to do in the first 48 hours after a workplace injury</h3>
+        <p>The steps you take immediately after getting hurt shape everything that follows. Here's the checklist.</p>
+        <span class="read">Read article →</span>
+      </a>
+      <a class="art rv d1" href="#">
+        <span class="cat">Social Security Disability</span>
+        <h3>How far back will my monetary disability payments go?</h3>
+        <p>Back-pay rules confuse almost everyone. What you're owed depends on dates most applicants never record.</p>
+        <span class="read">Read article →</span>
+      </a>
+      <a class="art rv d2" href="#">
+        <span class="cat">Wage Loss</span>
+        <h3>Wage loss benefits in Virginia: what you're actually entitled to</h3>
+        <p>Two-thirds of your average weekly wage sounds simple. Calculating it correctly rarely is.</p>
+        <span class="read">Read article →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Where We Practice</span>
+      <h2 style="font-size:clamp(30px,3.2vw,42px);margin-top:18px;font-weight:420">Serving all of Southwest &amp; Central Virginia</h2>
+      <p style="margin-top:18px;color:var(--ink-soft)">From our office on Courthouse Square, we represent injured workers and disabled Virginians across the region — and we come to you when your injury makes travel hard.</p>
+    </div>
+    <ul class="towns rv d1">
+      <li>Christiansburg</li><li>Blacksburg</li><li>Radford</li><li>Roanoke</li><li>Salem</li><li>Lynchburg</li><li>Pulaski</li><li>Rocky Mount</li><li>Smith Mountain Lake</li><li>Bedford</li><li>Martinsville</li><li>Danville</li><li>Abingdon</li><li>Wytheville</li><li>Galax</li><li>Floyd</li><li>Dublin</li><li>Appomattox</li><li>Ferrum</li><li>Moneta</li><li>Bassett</li><li>Lebanon</li><li>Alta Vista</li><li>Woodlawn</li>
+    </ul>
+  </div>
+</section>
+
+<section class="consult" id="consult">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">Free Consultation</span>
+      <h2 class="rv d1">Tell us what happened. <em>We'll tell you where you stand.</em></h2>
+      <p class="sub rv d2">No fee to talk. No pressure to hire. Just an honest read on your case from an attorney who knows how the other side thinks.</p>
+      <div class="phone rv d3">Prefer to call?<strong>540-555-0147</strong></div>
+    </div>
+    <form class="form rv d2" onsubmit="event.preventDefault();this.querySelector('.btn').textContent='Request received — we\'ll be in touch';">
+      <h3>Request your free consultation</h3>
+      <p class="note">We respond within one business day.</p>
+      <label for="f-name">Name</label>
+      <input id="f-name" type="text" autocomplete="name" required>
+      <label for="f-phone">Phone</label>
+      <input id="f-phone" type="tel" autocomplete="tel" required>
+      <label for="f-email">Email</label>
+      <input id="f-email" type="email" autocomplete="email">
+      <label for="f-reason">How can we help?</label>
+      <select id="f-reason">
+        <option>Workers' compensation — work injury</option>
+        <option>Social Security Disability — denial or application</option>
+        <option>Something else</option>
+      </select>
+      <button class="btn btn-solid" type="submit">Send My Request</button>
+      <p class="fine">Submitting this form does not create an attorney-client relationship.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="wordmark" href="#">Bennett <em style="color:var(--gold)">&amp;</em> Bennett Law</a>
+        <p>12 Courthouse Square<br>New River Valley, VA<br>540-555-0147</p>
+      </div>
+      <div>
+        <h4>Practice</h4>
+        <ul>
+          <li><a href="#practice">Workers' Compensation</a></li>
+          <li><a href="#practice">Social Security Disability</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Firm</h4>
+        <ul>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#difference">Why Us</a></li>
+          <li><a href="#articles">Articles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#consult">Free Consultation</a></li>
+          <li><a href="tel:5405550147">540-555-0147</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span class="badge">Design concept — Bennett &amp; Bennett Law is a fictional firm created for portfolio demonstration</span><br>
+      This page is a design exercise. The firm, attorneys, address, and phone number are fictional; any resemblance to a real business is coincidental. Nothing here constitutes legal advice.
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  if(new URLSearchParams(location.search).has('static'))return;
+  document.documentElement.classList.add('anim');
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  setTimeout(function(){
+    if(!document.querySelector('.rv.in'))document.documentElement.classList.remove('anim');
+  },1500);
+})();
+</script>
+</body>
+</html>
