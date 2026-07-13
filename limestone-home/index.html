@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Limestone Home Services | HVAC, Plumbing &amp; Electrical in Lexington, KY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16263B; --navy2:#0F1B2C; --cream:#F6F0E2; --cream2:#EFE6D2;
+  --orange:#E4572E; --orange2:#C74722; --brass:#C09A56;
+  --soft:#5C6472; --softer:#8B8FA0; --rule:#DED2B8; --white:#FFFDF8;
+  --shadow:6px 6px 0 var(--navy);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Libre Franklin",sans-serif;background:var(--cream);color:var(--navy);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque",sans-serif;line-height:1.06;letter-spacing:-.01em}
+img,svg{display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+.stripe{background:repeating-linear-gradient(-45deg,var(--orange) 0 8px,transparent 8px 16px);height:8px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--orange)}
+.eyebrow::before{content:"";width:26px;height:8px;background:repeating-linear-gradient(-45deg,var(--orange) 0 4px,transparent 4px 8px)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:16px;text-decoration:none;padding:15px 26px;border:2px solid var(--navy);border-radius:4px;transition:transform .15s ease,box-shadow .15s ease;cursor:pointer}
+.btn-solid{background:var(--orange);color:var(--white);box-shadow:var(--shadow)}
+.btn-solid:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--navy)}
+.btn-solid:active{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--navy)}
+.btn-line{background:var(--white);color:var(--navy);box-shadow:var(--shadow)}
+.btn-line:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--navy)}
+
+/* ---------- utility bar ---------- */
+.utility{background:var(--navy);color:var(--cream);font-size:13px;font-weight:500}
+.utility .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:8px;padding-bottom:8px;gap:16px}
+.utility a{color:var(--cream);text-decoration:none;font-weight:700}
+.utility a:hover{color:var(--orange)}
+.utility .dot{color:var(--orange);margin:0 8px}
+@media(max-width:720px){.utility .hours{display:none}}
+
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:60;background:var(--cream);border-bottom:2px solid var(--navy)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .mark{width:42px;height:42px;background:var(--navy);border-radius:4px;display:grid;place-items:center}
+.logo .mark svg{width:24px;height:24px}
+.logo .name{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:20px;line-height:1.05}
+.logo .name span{display:block;font-size:10.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--orange)}
+nav.main{display:flex;gap:28px;font-size:15px;font-weight:600}
+nav.main a{text-decoration:none;position:relative;padding:4px 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:3px;background:var(--orange);transition:width .2s}
+nav.main a:hover::after{width:100%}
+.head-cta{display:flex;align-items:center;gap:18px}
+.head-phone{text-align:right;line-height:1.2}
+.head-phone .lbl{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.head-phone a{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:19px;text-decoration:none;color:var(--navy)}
+.head-phone a:hover{color:var(--orange)}
+.head-cta .btn{padding:12px 20px;font-size:15px}
+@media(max-width:960px){nav.main{display:none}}
+@media(max-width:640px){.head-phone{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:84px 0 72px;
+  background:
+    radial-gradient(1100px 500px at 85% -10%,rgba(228,87,46,.09),transparent 60%),
+    var(--cream)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.35;pointer-events:none;
+  background-image:radial-gradient(rgba(22,38,59,.12) 1px,transparent 1px);background-size:26px 26px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,74px);font-weight:800;margin:20px 0 22px}
+.hero h1 .hl{color:var(--orange);white-space:nowrap}
+.hero .lede{font-size:19px;color:var(--soft);max-width:54ch;margin-bottom:34px}
+.hero .lede b{color:var(--navy)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:40px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1.5px solid var(--navy);border-radius:999px;padding:8px 15px;font-size:13px;font-weight:600}
+.chip svg{width:15px;height:15px;flex:none}
+.chip .star{color:var(--brass)}
+/* hero panel: guarantee ticket */
+.ticket{position:relative;background:var(--navy);color:var(--cream);border:2px solid var(--navy);border-radius:6px;box-shadow:10px 10px 0 rgba(22,38,59,.18);padding:36px 34px}
+.ticket::before{content:"";position:absolute;top:0;left:0;right:0;height:8px;border-radius:4px 4px 0 0;
+  background:repeating-linear-gradient(-45deg,var(--orange) 0 10px,var(--navy) 10px 20px)}
+.ticket h3{font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin:10px 0 22px;font-family:"Libre Franklin",sans-serif}
+.ticket .promise{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:16px 0;border-top:1px solid rgba(246,240,226,.16)}
+.ticket .promise:first-of-type{border-top:0;padding-top:0}
+.ticket .promise .ic{width:44px;height:44px;border:1.5px solid var(--brass);border-radius:6px;display:grid;place-items:center;color:var(--brass)}
+.ticket .promise .ic svg{width:22px;height:22px}
+.ticket .promise h4{font-size:18px;margin-bottom:4px}
+.ticket .promise p{font-size:14px;color:rgba(246,240,226,.72);line-height:1.5}
+.ticket .fine{margin-top:20px;padding-top:16px;border-top:1px dashed rgba(246,240,226,.28);font-size:12px;color:rgba(246,240,226,.55)}
+@media(max-width:920px){.hero .wrap{grid-template-columns:1fr}.hero{padding:56px 0}}
+
+/* ---------- trust bar ---------- */
+.trustbar{background:var(--navy);color:var(--cream)}
+.trustbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-top:26px;padding-bottom:26px}
+.trust{display:flex;align-items:center;gap:14px}
+.trust svg{width:26px;height:26px;color:var(--orange);flex:none}
+.trust b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:17px}
+.trust span{font-size:12.5px;color:rgba(246,240,226,.6)}
+@media(max-width:920px){.trustbar .wrap{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.trustbar .wrap{grid-template-columns:1fr;gap:16px}}
+
+/* ---------- sections ---------- */
+section{padding:88px 0}
+.sec-head{max-width:640px;margin-bottom:52px}
+.sec-head h2{font-size:clamp(30px,4vw,46px);font-weight:800;margin:16px 0 14px}
+.sec-head p{color:var(--soft);font-size:17.5px}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.svc{background:var(--white);border:2px solid var(--navy);border-radius:6px;padding:30px 28px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease;display:flex;flex-direction:column}
+.svc:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--navy)}
+.svc .ic{width:52px;height:52px;background:var(--cream2);border:1.5px solid var(--navy);border-radius:6px;display:grid;place-items:center;margin-bottom:20px;color:var(--orange)}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:21px;margin-bottom:8px}
+.svc p{font-size:14.5px;color:var(--soft);margin-bottom:16px;flex:1}
+.svc .from{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange)}
+.svc.urgent{background:var(--navy);color:var(--cream)}
+.svc.urgent p{color:rgba(246,240,226,.7)}
+.svc.urgent .ic{background:rgba(228,87,46,.15);border-color:var(--orange)}
+@media(max-width:920px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
+
+/* why band */
+.why{background:var(--navy);color:var(--cream);position:relative;overflow:hidden}
+.why::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:2px dashed rgba(192,154,86,.25);border-radius:50%;pointer-events:none}
+.why .sec-head h2,.why .sec-head p{color:var(--cream)}
+.why .sec-head p{color:rgba(246,240,226,.65)}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 64px}
+.why-item{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:30px 0;border-top:1px solid rgba(246,240,226,.14)}
+.why-item .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:30px;color:var(--brass)}
+.why-item h3{font-size:20px;margin-bottom:8px}
+.why-item h3 .tag{display:inline-block;vertical-align:3px;margin-left:10px;background:var(--orange);color:var(--white);font-family:"Libre Franklin",sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:3px}
+.why-item p{font-size:14.5px;color:rgba(246,240,226,.68)}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:step}
+.step{background:var(--white);border:2px solid var(--navy);border-radius:6px;padding:30px 28px;position:relative;box-shadow:var(--shadow)}
+.step::before{counter-increment:step;content:"0" counter(step);position:absolute;top:-18px;left:22px;background:var(--orange);color:var(--white);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:15px;padding:6px 12px;border:2px solid var(--navy);border-radius:4px}
+.step h3{font-size:19px;margin:14px 0 8px}
+.step p{font-size:14.5px;color:var(--soft)}
+@media(max-width:860px){.steps{grid-template-columns:1fr;gap:34px}}
+
+/* seasonal offer */
+.offer{background:var(--orange);color:var(--white);position:relative;overflow:hidden;padding:56px 0}
+.offer::before,.offer::after{content:"";position:absolute;left:0;right:0;height:10px;background:repeating-linear-gradient(-45deg,var(--navy) 0 12px,transparent 12px 24px)}
+.offer::before{top:0}.offer::after{bottom:0}
+.offer .wrap{display:flex;align-items:center;justify-content:space-between;gap:36px;flex-wrap:wrap}
+.offer h2{font-size:clamp(26px,3.4vw,40px);font-weight:800}
+.offer h2 .price{background:var(--white);color:var(--orange);padding:2px 14px;border-radius:6px;display:inline-block;transform:rotate(-2deg)}
+.offer p{font-size:15.5px;opacity:.92;max-width:52ch;margin-top:8px}
+.offer .btn{background:var(--navy);color:var(--white);border-color:var(--navy2);box-shadow:6px 6px 0 rgba(15,27,44,.35);flex:none}
+.offer .btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 rgba(15,27,44,.35)}
+
+/* reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.rev{background:var(--white);border:2px solid var(--navy);border-radius:6px;padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.rev .stars{display:flex;gap:3px;color:var(--brass);margin-bottom:16px}
+.rev .stars svg{width:17px;height:17px}
+.rev p{font-size:15px;color:var(--soft);flex:1}
+.rev p b{color:var(--navy)}
+.rev .who{margin-top:20px;padding-top:16px;border-top:1px solid var(--rule);font-size:13.5px;font-weight:700}
+.rev .who span{display:block;font-weight:500;color:var(--softer);font-size:12.5px}
+@media(max-width:860px){.rev-grid{grid-template-columns:1fr}}
+
+/* service area */
+.area .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px;align-items:start}
+.area-map{background:var(--white);border:2px solid var(--navy);border-radius:6px;box-shadow:var(--shadow);padding:30px;text-align:center}
+.area-map svg{width:100%;height:auto;max-width:320px;margin:0 auto}
+.area-map .cap{font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-top:14px}
+.area-cols{display:grid;grid-template-columns:1fr 1fr;gap:8px 40px;margin-top:28px}
+.area-cols div{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500;padding:7px 0;border-bottom:1px solid var(--rule)}
+.area-cols svg{width:14px;height:14px;color:var(--orange);flex:none}
+@media(max-width:860px){.area .wrap{grid-template-columns:1fr}}
+
+/* quote form */
+.quote{background:var(--cream2);border-top:2px solid var(--navy)}
+.quote .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px;align-items:start}
+.quote-form{background:var(--white);border:2px solid var(--navy);border-radius:6px;box-shadow:var(--shadow);padding:36px}
+.quote-form .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;font-family:"Libre Franklin",sans-serif;font-size:15.5px;padding:13px 14px;border:1.5px solid var(--navy);border-radius:4px;background:var(--cream);color:var(--navy);transition:box-shadow .15s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;box-shadow:3px 3px 0 var(--orange)}
+.field textarea{resize:vertical;min-height:96px}
+.quote-form .btn{width:100%;justify-content:center}
+.quote-form .promise-line{text-align:center;font-size:13px;color:var(--soft);margin-top:14px}
+.form-done{display:none;text-align:center;padding:36px 10px}
+.form-done svg{width:52px;height:52px;color:var(--orange);margin:0 auto 18px}
+.form-done h3{font-size:24px;margin-bottom:8px}
+.form-done p{color:var(--soft);font-size:15px}
+.quote-side .call-card{margin-top:30px;background:var(--navy);color:var(--cream);border-radius:6px;padding:26px 28px;display:flex;align-items:center;gap:20px}
+.quote-side .call-card svg{width:34px;height:34px;color:var(--orange);flex:none}
+.quote-side .call-card b{font-family:"Bricolage Grotesque",sans-serif;font-size:22px;display:block}
+.quote-side .call-card a{color:var(--cream);text-decoration:none}
+.quote-side .call-card a:hover{color:var(--orange)}
+.quote-side .call-card span{font-size:13px;color:rgba(246,240,226,.6)}
+@media(max-width:920px){.quote .wrap{grid-template-columns:1fr;gap:44px}.quote-form .row{grid-template-columns:1fr}}
+
+/* footer */
+footer.site{background:var(--navy2);color:rgba(246,240,226,.75);font-size:14px}
+footer.site .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:44px;padding:64px 0 48px}
+footer.site h4{font-family:"Libre Franklin",sans-serif;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin-bottom:16px}
+footer.site a{color:inherit;text-decoration:none}
+footer.site a:hover{color:var(--orange)}
+footer.site li{list-style:none;padding:4px 0}
+footer.site .flogo{display:flex;align-items:center;gap:12px;margin-bottom:18px;color:var(--cream)}
+footer.site .flogo .mark{width:38px;height:38px;background:var(--orange);border-radius:4px;display:grid;place-items:center}
+footer.site .flogo .mark svg{width:22px;height:22px}
+footer.site .flogo b{font-family:"Bricolage Grotesque",sans-serif;font-size:18px}
+footer.site .legal{border-top:1px solid rgba(246,240,226,.14);padding:26px 0 34px;font-size:12px;color:rgba(246,240,226,.45);line-height:1.7}
+footer.site .legal .badge{display:inline-block;margin-bottom:10px;padding:4px 10px;border:1px solid rgba(246,240,226,.25);border-radius:2px;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+@media(max-width:920px){footer.site .cols{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){footer.site .cols{grid-template-columns:1fr}}
+
+/* mobile sticky call bar */
+.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:70;background:var(--navy);border-top:2px solid var(--orange);padding:10px 14px;gap:12px}
+.callbar a{flex:1;text-align:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:15px;text-decoration:none;padding:12px;border-radius:4px}
+.callbar .c1{background:var(--orange);color:var(--white)}
+.callbar .c2{background:var(--cream);color:var(--navy)}
+@media(max-width:640px){.callbar{display:flex}body{padding-bottom:64px}}
+
+/* reveal animations */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+.hero .rv{transition-duration:.7s}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .btn,.svc{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- utility bar -->
+<div class="utility">
+  <div class="wrap">
+    <div class="hours">Mon&ndash;Sat 7am&ndash;7pm<span class="dot">&bull;</span>24/7 emergency line</div>
+    <div>Same-week scheduling, Lexington &amp; surrounding counties<span class="dot">&bull;</span><a href="tel:+18595550164">(859) 555-0164</a></div>
+  </div>
+</div>
+
+<!-- header -->
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F6F0E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/><path d="M10 19v-5h4v5"/></svg>
+      </span>
+      <span class="name">Limestone<br>Home Services<span>Lexington, Kentucky</span></span>
+    </a>
+    <nav class="main" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Service Area</a>
+    </nav>
+    <div class="head-cta">
+      <div class="head-phone">
+        <div class="lbl">Call or text</div>
+        <a href="tel:+18595550164">(859) 555-0164</a>
+      </div>
+      <a class="btn btn-solid" href="#quote">Get a free quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- hero -->
+<main id="top">
+<section class="hero" style="padding-top:72px">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">HVAC &bull; Plumbing &bull; Electrical &bull; Repairs</span>
+      <h1 class="rv" style="transition-delay:.08s">Home repairs without <span class="hl">the runaround.</span></h1>
+      <p class="lede rv" style="transition-delay:.16s">Flat-rate quotes <b>before</b> the work starts. Background-checked techs who show up in the window we promised. And if we're late, <b>the service call is free.</b> That's how we've done it in Lexington since 2009.</p>
+      <div class="ctas rv" style="transition-delay:.24s">
+        <a class="btn btn-solid" href="#quote">Get a free quote</a>
+        <a class="btn btn-line" href="tel:+18595550164">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+          (859) 555-0164
+        </a>
+      </div>
+      <div class="chips rv" style="transition-delay:.32s">
+        <span class="chip"><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg>4.9 &middot; 480+ Google reviews</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z"/></svg>Licensed &amp; insured in Kentucky</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>Family-run since 2009</span>
+      </div>
+    </div>
+    <aside class="ticket rv" style="transition-delay:.2s" aria-label="Our guarantees">
+      <h3>The Limestone Guarantee</h3>
+      <div class="promise">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+        <div>
+          <h4>The quote is the price</h4>
+          <p>Flat-rate pricing from a printed book, approved by you before a single tool comes off the truck. No hourly meter, no surprise line items.</p>
+        </div>
+      </div>
+      <div class="promise">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></span>
+        <div>
+          <h4>On time, or it's free</h4>
+          <p>You get a two-hour window and a text when your tech is on the way. If we miss the window, the $59 service call fee is waived.</p>
+        </div>
+      </div>
+      <div class="promise">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div>
+          <h4>90-day workmanship warranty</h4>
+          <p>If a repair we made doesn't hold, we come back and make it right. No re-diagnosis fee, no argument.</p>
+        </div>
+      </div>
+      <p class="fine">Guarantees apply to standard residential service calls in our Lexington service area.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- trust bar -->
+<div class="trustbar">
+  <div class="wrap">
+    <div class="trust rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><div><b>Background-checked techs</b><span>Photo ID texted before arrival</span></div></div>
+    <div class="trust rv" style="transition-delay:.08s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><div><b>Same-week scheduling</b><span>Most jobs booked within 3 days</span></div></div>
+    <div class="trust rv" style="transition-delay:.16s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><div><b>Flat-rate pricing</b><span>Approved by you, up front</span></div></div>
+    <div class="trust rv" style="transition-delay:.24s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg><div><b>24/7 emergency line</b><span>Burst pipe? No heat? Call now.</span></div></div>
+  </div>
+</div>
+
+<!-- services -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">What we do</span>
+      <h2>One number for the whole house.</h2>
+      <p>Heating, cooling, plumbing, and electrical under one roof, so you're not juggling three contractors who blame each other.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4.4c2 1.8 3 4 3 6.6a5 5 0 0 1-10 0c0-1.3.4-2.4 1-3.4.8 1 1.6 1.5 2.5 1.6C10 6.6 11.4 4.6 14 4.4z"/><path d="M12 21a9 9 0 0 0 9-9c0-4-2-7.5-5.5-9.5C16 5 15 7.5 12.5 8 12 5.5 10.5 4 8.5 3.5 5 5.5 3 8.5 3 12a9 9 0 0 0 9 9z"/></svg></span>
+        <h3>AC &amp; Heating</h3>
+        <p>Repair, maintenance, and full system replacement for central air, furnaces, and heat pumps. We service every major brand.</p>
+        <span class="from">Tune-ups from $89</span>
+      </div>
+      <div class="svc rv" style="transition-delay:.07s">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6 6.3 6 11a6 6 0 0 1-12 0c0-4.7 6-11 6-11z"/></svg></span>
+        <h3>Plumbing</h3>
+        <p>Leaks, clogs, fixtures, sump pumps, and repiping. Camera inspection before we quote, so you see what we see.</p>
+        <span class="from">Drain clearing from $99</span>
+      </div>
+      <div class="svc rv" style="transition-delay:.14s">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"/></svg></span>
+        <h3>Electrical</h3>
+        <p>Panel upgrades, outlets and switches, ceiling fans, EV charger installs, and whole-home safety inspections.</p>
+        <span class="from">Inspections from $129</span>
+      </div>
+      <div class="svc rv">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="20" rx="2"/><path d="M10 6h4M10 10h4"/></svg></span>
+        <h3>Water Heaters</h3>
+        <p>Repair and same-week replacement, tank or tankless. Old unit hauled away, work area left cleaner than we found it.</p>
+        <span class="from">Diagnostics from $59</span>
+      </div>
+      <div class="svc rv" style="transition-delay:.07s">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12l-8.5 8.5a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 11.5 21 8l-1.5-4.5L15 2l-3.5 3.4a2 2 0 0 0 0 2.9l3.2 3.2a2 2 0 0 0 2.9 0z"/></svg></span>
+        <h3>Handyman &amp; Repairs</h3>
+        <p>Drywall, doors, caulking, gutter fixes, that list on the fridge. Book a half day and hand your tech the whole list.</p>
+        <span class="from">Half-day from $249</span>
+      </div>
+      <div class="svc urgent rv" style="transition-delay:.14s">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span>
+        <h3>Emergency Service</h3>
+        <p>Burst pipe, no heat in January, dead AC in July, sparking panel. A live person answers our line around the clock.</p>
+        <span class="from" style="color:var(--orange)">Call (859) 555-0164</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- why band -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Why Limestone</span>
+      <h2>Built on the stuff that makes people switch companies.</h2>
+      <p>Every policy below exists because a homeowner told us a story about the last company they used.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item rv">
+        <span class="n">01</span>
+        <div>
+          <h3>The price we quote is the price you pay<span class="tag">Guarantee</span></h3>
+          <p>Flat-rate book pricing, shown to you and approved before work begins. If the job turns out harder than we quoted, that's our problem, not your bill.</p>
+        </div>
+      </div>
+      <div class="why-item rv" style="transition-delay:.08s">
+        <span class="n">02</span>
+        <div>
+          <h3>On time, or the visit is free<span class="tag">Guarantee</span></h3>
+          <p>Two-hour arrival windows, a text with your tech's name and photo when they're en route, and a waived service fee if we blow the window.</p>
+        </div>
+      </div>
+      <div class="why-item rv" style="transition-delay:.16s">
+        <span class="n">03</span>
+        <div>
+          <h3>Techs you'd let in without a second thought</h3>
+          <p>Every technician is background-checked, drug-screened, and badged. Shoe covers and floor mats on every job, and we haul our own debris.</p>
+        </div>
+      </div>
+      <div class="why-item rv" style="transition-delay:.24s">
+        <span class="n">04</span>
+        <div>
+          <h3>Actually local, actually accountable</h3>
+          <p>Family-run from a shop off Winchester Road since 2009. The owner's cell is on every invoice, and he answers it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- process -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps. No mystery.</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv">
+        <h3>Call, text, or book online</h3>
+        <p>Tell us what's going on. We'll give you a two-hour arrival window, usually within the week, same day for emergencies.</p>
+      </div>
+      <div class="step rv" style="transition-delay:.08s">
+        <h3>Approve a flat-rate quote</h3>
+        <p>Your tech diagnoses the problem, walks you through options, and shows you the price from the book. Work starts only when you say go.</p>
+      </div>
+      <div class="step rv" style="transition-delay:.16s">
+        <h3>Done, checked, warrantied</h3>
+        <p>We test the fix with you watching, clean up, and back the work for 90 days. You get a follow-up text two days later, just to be sure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- seasonal offer -->
+<section class="offer" id="offer">
+  <div class="wrap">
+    <div class="rv">
+      <h2>July special: <span class="price">$89</span> AC tune-up</h2>
+      <p>21-point inspection, coil cleaning, refrigerant check, and a written health report on your system. Keeps most manufacturer warranties valid. Book by July 31.</p>
+    </div>
+    <a class="btn rv" href="#quote" style="transition-delay:.1s">Claim the tune-up</a>
+  </div>
+</section>
+
+<!-- reviews -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Reviews</span>
+      <h2>What your neighbors say.</h2>
+      <p>Pulled from our Google profile. We ask every customer for an honest review, not a five-star one.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev rv">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        </div>
+        <p>"AC died on a Friday in June. They had a tech out Saturday morning, <b>quoted me a flat price before touching anything</b>, and had it running by noon. The text with the tech's photo beforehand is a small thing that matters."</p>
+        <div class="who">Melissa R.<span>Chevy Chase</span></div>
+      </div>
+      <div class="rev rv" style="transition-delay:.08s">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        </div>
+        <p>"Second company I called about a slow drain. First one wanted to 'open the wall and see.' Limestone ran a camera, <b>showed me the clog on the screen</b>, and cleared it for the price they quoted on the phone."</p>
+        <div class="who">Darnell W.<span>Hamburg</span></div>
+      </div>
+      <div class="rev rv" style="transition-delay:.16s">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2l-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        </div>
+        <p>"Used the half-day handyman for the whole list: two doors, drywall patch, gutter bracket, caulking. One visit, one bill, <b>everything off the fridge list.</b> Booked again for the fall."</p>
+        <div class="who">Katie &amp; Sam B.<span>Beaumont</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- service area -->
+<section class="area" id="areas" style="padding-top:0">
+  <div class="wrap">
+    <div class="area-map rv">
+      <svg viewBox="0 0 320 260" aria-hidden="true">
+        <circle cx="160" cy="120" r="104" fill="none" stroke="#DED2B8" stroke-width="1.5" stroke-dasharray="5 6"/>
+        <circle cx="160" cy="120" r="66" fill="none" stroke="#C09A56" stroke-width="1.5" stroke-dasharray="5 6"/>
+        <circle cx="160" cy="120" r="7" fill="#E4572E"/>
+        <circle cx="160" cy="120" r="13" fill="none" stroke="#E4572E" stroke-width="1.5" opacity=".5"/>
+        <text x="160" y="104" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="700" font-size="15" fill="#16263B">Lexington</text>
+        <text x="235" y="52" text-anchor="middle" font-size="11.5" fill="#5C6472" font-family="Libre Franklin,sans-serif">Paris</text>
+        <circle cx="235" cy="62" r="3.5" fill="#16263B"/>
+        <text x="78" y="48" text-anchor="middle" font-size="11.5" fill="#5C6472" font-family="Libre Franklin,sans-serif">Georgetown</text>
+        <circle cx="78" cy="58" r="3.5" fill="#16263B"/>
+        <text x="52" y="176" text-anchor="middle" font-size="11.5" fill="#5C6472" font-family="Libre Franklin,sans-serif">Versailles</text>
+        <circle cx="52" cy="164" r="3.5" fill="#16263B"/>
+        <text x="130" y="222" text-anchor="middle" font-size="11.5" fill="#5C6472" font-family="Libre Franklin,sans-serif">Nicholasville</text>
+        <circle cx="130" cy="208" r="3.5" fill="#16263B"/>
+        <text x="256" y="182" text-anchor="middle" font-size="11.5" fill="#5C6472" font-family="Libre Franklin,sans-serif">Winchester</text>
+        <circle cx="256" cy="168" r="3.5" fill="#16263B"/>
+        <text x="222" y="238" text-anchor="middle" font-size="11.5" fill="#5C6472" font-family="Libre Franklin,sans-serif">Richmond</text>
+        <circle cx="222" cy="224" r="3.5" fill="#16263B"/>
+      </svg>
+      <div class="cap">Roughly 25 miles around downtown Lexington</div>
+    </div>
+    <div>
+      <div class="sec-head rv" style="margin-bottom:8px">
+        <span class="eyebrow">Service area</span>
+        <h2>If you can see Rupp Arena in under half an hour, we've got you.</h2>
+      </div>
+      <div class="area-cols">
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Chevy Chase</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Georgetown</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Hamburg</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Nicholasville</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Beaumont</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Versailles</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kenwick &amp; Bell Court</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Winchester</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Masterson Station</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Richmond</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tates Creek</div>
+        <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Paris</div>
+      </div>
+      <p class="rv" style="margin-top:22px;font-size:14px;color:var(--soft)">Not on the list? Call anyway. If we can't get to you, we'll tell you who can.</p>
+    </div>
+  </div>
+</section>
+
+<!-- quote form -->
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div class="quote-side">
+      <div class="sec-head rv" style="margin-bottom:0">
+        <span class="eyebrow">Free quote</span>
+        <h2>Tell us what's broken. We'll tell you what it costs.</h2>
+        <p>Send the form and a real person from our Lexington office replies <b>within one business hour</b>, 7am to 9pm, seven days a week.</p>
+      </div>
+      <div class="call-card rv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+        <div>
+          <span>Rather talk to a human right now?</span>
+          <b><a href="tel:+18595550164">(859) 555-0164</a></b>
+        </div>
+      </div>
+    </div>
+    <div class="quote-form rv">
+      <form id="quoteForm" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="qname">Name</label>
+            <input id="qname" name="name" type="text" autocomplete="name" required placeholder="Jane Calloway">
+          </div>
+          <div class="field">
+            <label for="qphone">Phone</label>
+            <input id="qphone" name="phone" type="tel" autocomplete="tel" required placeholder="(859) 555-0123">
+          </div>
+        </div>
+        <div class="field">
+          <label for="qservice">What do you need?</label>
+          <select id="qservice" name="service" required>
+            <option value="" selected disabled>Choose a service</option>
+            <option>AC &amp; heating</option>
+            <option>Plumbing</option>
+            <option>Electrical</option>
+            <option>Water heater</option>
+            <option>Handyman / repair list</option>
+            <option>$89 AC tune-up special</option>
+            <option>Emergency (call us instead!)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="qmsg">What's going on?</label>
+          <textarea id="qmsg" name="message" placeholder="Upstairs AC blowing warm air since yesterday..."></textarea>
+        </div>
+        <button class="btn btn-solid" type="submit">Send my free quote request</button>
+        <p class="promise-line">No spam, no sales calls after the job. We reply once, fast.</p>
+      </form>
+      <div class="form-done" id="formDone" role="status">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8.5 12.5 2.5 2.5 5-5.5"/></svg>
+        <h3>Got it. We're on it.</h3>
+        <p>A real person from our Lexington office will call or text you within one business hour (7am&ndash;9pm). Talk soon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- footer -->
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="flogo">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FFFDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/><path d="M10 19v-5h4v5"/></svg>
+          </span>
+          <b>Limestone Home Services</b>
+        </div>
+        <p>Flat-rate home repair for Lexington and the Bluegrass, family-run since 2009. The price we quote is the price you pay.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">AC &amp; Heating</a></li>
+          <li><a href="#services">Plumbing</a></li>
+          <li><a href="#services">Electrical</a></li>
+          <li><a href="#services">Water Heaters</a></li>
+          <li><a href="#services">Handyman</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">Why Limestone</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#areas">Service Area</a></li>
+          <li><a href="#quote">Free Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18595550164">(859) 555-0164</a></li>
+          <li><a href="mailto:hello@limestonehome.example">hello@limestonehome.example</a></li>
+          <li>1180 Quarry Yard Dr, Lexington, KY 40505</li>
+          <li>Mon&ndash;Sat 7am&ndash;7pm &middot; 24/7 emergency</li>
+          <li>KY Master HVAC #HM-06214 &middot; Master Plumber #MP-8841</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span class="badge">Design concept &mdash; fictional business</span><br>
+      This page is a design exercise. Limestone Home Services is a fictional company created for portfolio demonstration; the address, phone numbers, license numbers, reviews, and people are fictional, and any resemblance to a real business is coincidental. Page excluded from search indexing.
+    </div>
+  </div>
+</footer>
+
+<!-- mobile sticky call bar -->
+<div class="callbar">
+  <a class="c1" href="tel:+18595550164">Call now</a>
+  <a class="c2" href="#quote">Get a quote</a>
+</div>
+
+<script>
+// scroll reveals (progressive enhancement)
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+// demo quote form
+document.getElementById('quoteForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var f=ev.target;
+  if(!f.checkValidity()){f.reportValidity();return}
+  f.style.display='none';
+  document.getElementById('formDone').style.display='block';
+});
+</script>
+
+</body>
+</html>

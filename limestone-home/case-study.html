@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Case Study — Home Services Homepage Concept (Workwear Utility)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FAF6EF;--ink:#1C2B25;--accent:#9C4A21;--gold:#B98A44;--rule:#DCD2C0;--soft:#4C5B53;--paper2:#F1EADD}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Public Sans",sans-serif;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.65}
+.wrap{max-width:1000px;margin:0 auto;padding:0 32px}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.15}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+header{padding:72px 0 56px;border-bottom:1px solid var(--rule)}
+header h1{font-size:clamp(32px,4.5vw,52px);margin:18px 0 20px;font-weight:400}
+header h1 em{font-style:italic;color:var(--accent)}
+header p{max-width:64ch;color:var(--soft);font-size:18px}
+section{padding:64px 0}
+h2{font-size:clamp(26px,3vw,36px);margin-bottom:16px}
+h2 em{font-style:italic;color:var(--accent)}
+.brief{
+  background:var(--paper2);border:1px solid var(--rule);border-radius:3px;
+  padding:40px 44px;margin-bottom:56px;
+}
+.brief h3{font-family:"Public Sans",sans-serif;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.brief p{color:var(--soft);font-size:16px;max-width:72ch}
+.brief p+p{margin-top:14px}
+.shot{border:1px solid var(--rule);border-radius:3px;overflow:hidden;background:#fff;box-shadow:0 16px 40px rgba(28,43,37,.1)}
+.shot img{display:block;width:100%}
+.caption{font-size:13.5px;color:var(--soft);margin-top:12px}
+.decisions{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;margin-top:36px}
+.decision{padding:26px 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:52px 1fr;gap:18px}
+.decision .n{font-family:"Fraunces",serif;font-style:italic;font-size:26px;color:var(--gold)}
+.decision h3{font-size:18px;margin-bottom:6px}
+.decision p{font-size:14.5px;color:var(--soft)}
+.meta{background:var(--ink);color:var(--paper);border-radius:3px;padding:40px 44px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px}
+.meta h3{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-family:"Public Sans",sans-serif;font-weight:600}
+.meta p{font-size:14.5px;color:rgba(250,246,239,.8)}
+footer{padding:40px 0 64px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--soft);line-height:1.7}
+footer .badge{display:inline-block;margin-bottom:12px;padding:5px 12px;border:1px solid var(--rule);border-radius:2px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+@media(max-width:860px){.decisions,.meta{grid-template-columns:1fr}}
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-size:12px}
+  .shot{box-shadow:none}
+  section{padding:32px 0}
+  header{padding:32px 0 24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow">Concept Case Study · Home Services Website Design</span>
+    <h1>A home services homepage where <em>the guarantees do the selling</em></h1>
+    <p>A homepage concept for a fictional Lexington, Kentucky HVAC, plumbing, and electrical company, demonstrating the approach I bring to local service businesses: lead with the promises homeowners actually switch companies over, and make the phone number impossible to lose.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="brief">
+      <h3>The Design Brief</h3>
+      <p>Limestone Home Services (fictional): a family-run home services company in Lexington, Kentucky, offering HVAC, plumbing, electrical, water heaters, and handyman work. Solid substance — flat-rate book pricing, background-checked techs, a 24/7 emergency line — presented the way most local competitors present it: buried under stock photos of smiling vans.</p>
+      <p>The challenge given to the design: homeowners don't shop home services by feature list, they shop by fear. Surprise bills, no-show techs, strangers in the house. So the page leads with the three policies that neutralize those fears — the quote is the price, on time or it's free, 90-day warranty — and treats every section as one more reason to call the same number.</p>
+    </div>
+    <div class="shot"><img src="assets/concept-full.png" alt="Full homepage concept: workwear utility design with bold grotesque typography, navy and blaze orange palette, and a guarantee-led hero"></div>
+    <p class="caption">The full homepage concept: guarantee ticket in the hero, trust strip, six-service grid with entry pricing, a dark "why us" band, three-step process, seasonal offer, neighborhood-anchored reviews, service-area map, and a quote form with a response-time promise.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Four decisions that <em>do the selling</em></h2>
+    <div class="decisions">
+      <div class="decision">
+        <span class="n">i.</span>
+        <div>
+          <h3>Sell the guarantees, not the services</h3>
+          <p>Every competitor lists the same five services. Nobody else promises "on time or the visit is free" in the hero. The guarantees get a dedicated ticket card beside the headline, "Guarantee" tags in the why-us band, and a fine-print line that makes them feel real rather than rhetorical.</p>
+        </div>
+      </div>
+      <div class="decision">
+        <span class="n">ii.</span>
+        <div>
+          <h3>A workwear aesthetic that reads blue-collar, not corporate</h3>
+          <p>Bricolage Grotesque display type over Libre Franklin, duck-canvas cream, deep navy, blaze orange, hazard-stripe details, and hard offset shadows. It looks like quality work gear — sturdy, honest, a little proud — instead of the interchangeable template sites the category is drowning in.</p>
+        </div>
+      </div>
+      <div class="decision">
+        <span class="n">iii.</span>
+        <div>
+          <h3>The phone number never leaves the screen</h3>
+          <p>Utility bar, sticky header, emergency card, call card beside the form, footer, and a fixed call bar on mobile. Home services convert by phone; the quote form is the second path, and it promises a reply within one business hour so it doesn't feel like a black hole.</p>
+        </div>
+      </div>
+      <div class="decision">
+        <span class="n">iv.</span>
+        <div>
+          <h3>Local SEO baked into the structure</h3>
+          <p>Neighborhood-anchored reviews (Chevy Chase, Hamburg, Beaumont), a service-area section naming twelve localities, consistent name-address-phone in the footer, and a July-specific seasonal offer. The content structure is the local-search strategy, not a layer added later.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="meta">
+      <div>
+        <h3>Scope</h3>
+        <p>Homepage concept: design system, typography, palette, ten content sections, responsive to mobile with a sticky call bar, working quote-form pattern.</p>
+      </div>
+      <div>
+        <h3>Stack</h3>
+        <p>Hand-coded HTML/CSS with vanilla JS enhancements — one file, two font families, no page builder. Content readable without JavaScript; animations are progressive enhancement.</p>
+      </div>
+      <div>
+        <h3>Content</h3>
+        <p>All copy, branding, pricing, reviews, and business details are original fiction written for this exercise. No real company's content, design, or identity was used.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="badge">Design concept — fictional business</span><br>
+    This case study is a self-initiated design exercise. Limestone Home Services is a fictional company created for portfolio demonstration; any resemblance to a real business is coincidental.
+  </div>
+</footer>
+
+</body>
+</html>
